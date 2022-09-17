@@ -12,7 +12,7 @@ export default function NotFound() {
         />
         <TextStyled>
           Oooops! Page not found!
-          <NavLinkNotFound to="/goit-react-hw-05-movies/">
+          <NavLinkNotFound to="/">
             Return Home
           </NavLinkNotFound>
         </TextStyled>

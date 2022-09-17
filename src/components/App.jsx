@@ -14,10 +14,10 @@ export const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/goit-react-hw-05-movies/" element={<SharedLayout />}>
+        <Route path="/" element={<SharedLayout />}>
           <Route index element={<Suspense fallback={<h2>Loading ...</h2>}> <Home /></Suspense>} />
-          <Route path="/goit-react-hw-05-movies/movies" element={<Suspense fallback={<h2>Loading ...</h2>}> <Searchbar /></Suspense>} />
-          <Route path="/goit-react-hw-05-movies/movies/:movieId" element={<Suspense fallback={<h2>Loading ...</h2>}> <MovieView /></Suspense>} >
+          <Route path="movies" element={<Suspense fallback={<h2>Loading ...</h2>}> <Searchbar /></Suspense>} />
+          <Route path="movies/:movieId" element={<Suspense fallback={<h2>Loading ...</h2>}> <MovieView /></Suspense>} >
             <Route path="cast" element={<Cast />} />
             <Route path="reviews" element={<Review />} />
           </Route>

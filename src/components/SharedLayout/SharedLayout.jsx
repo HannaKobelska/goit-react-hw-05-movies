@@ -6,14 +6,21 @@ export const SharedLayout = () => {
     <Container>
       <Header>
         <nav>
+         
           <List>
             <li>
-              <NewLink to="/goit-react-hw-05-movies/" className={({ isActive }) => (isActive ? 'active' : '')}>
-                Home </NewLink>
+              <NewLink
+                to="/"
+              >
+                Home
+              </NewLink>
             </li>
             <li>
-              <NewLink to="/goit-react-hw-05-movies/movies" className={({ isActive }) => (isActive ? 'active' : '')}>
-                Movies </NewLink>
+              <NewLink
+                to="movies"
+              >
+                Movies
+                </NewLink>
             </li>
 
           </List>
