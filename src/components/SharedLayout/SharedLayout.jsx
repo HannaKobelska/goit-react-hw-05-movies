@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Container, Header, NewLink, List } from './SharedLayout.styled';
+import { Container, Header, Link, List } from './SharedLayout.styled';
 
 export const SharedLayout = () => {
   return (
@@ -9,18 +9,10 @@ export const SharedLayout = () => {
          
           <List>
             <li>
-              <NewLink
-                to="/"
-              >
-                Home
-              </NewLink>
+              <Link to="/" end>Home</Link>
             </li>
             <li>
-              <NewLink
-                to="movies"
-              >
-                Movies
-                </NewLink>
+              <Link to="movies">Movies</Link>
             </li>
 
           </List>
@@ -31,4 +23,3 @@ export const SharedLayout = () => {
   );
 };
 
-// className={({ isActive }) => (isActive ? 'active' : '')
